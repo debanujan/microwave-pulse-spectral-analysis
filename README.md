@@ -12,7 +12,11 @@ Each script generates numerical data and figures for four stages: the baseband p
 
 ## Numerical data
 
-The [data directory](data/README.md) provides separate folders for baseband pulse data, baseband spectra, IQ time-domain data and IQ spectra. CSV files are organised by analysis stage, with the pulse family and simulation parameters retained in their filenames.
+The [data directory](data/README.md) provides separate folders for baseband pulse data, baseband spectra, IQ time-domain data and IQ spectra. CSV files are organised by analysis stage and pulse family, with the simulation parameters retained in their filenames.
+
+## Figures
+
+The [plots directory](plots/README.md) follows the same structure as the numerical data. PNG figures are grouped by analysis stage and pulse family, with matching filenames linking each figure to its corresponding CSV file.
 
 ## Running the calculations
 
