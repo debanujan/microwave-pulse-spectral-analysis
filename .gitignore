@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+
+# Original generators create these study folders in the repository root.
+# Curated research data and figures can be added separately.
+/*_study/
