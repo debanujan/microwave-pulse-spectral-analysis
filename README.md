@@ -1,25 +1,22 @@
-# microwave-pulse-spectral-analysis
-Codes, data, and plots for time- and frequency-domain analysis of microwave control pulse families for superconducting transmon qubits.
+# Spectral Analysis of Microwave Pulses for Superconducting Qubit Control
+
+This repository documents the numerical work associated with my M.Sc. thesis, **Spectral Analysis of Microwave Pulses for Superconducting Qubit Control**.
+
+I study the time-domain profiles and frequency-domain characteristics of microwave control-pulse envelopes relevant to superconducting transmon qubits. The calculations examine the dependence of the spectra on pulse shape, duration and sampling rate, together with the frequency translation produced by IQ modulation.
 
 ## Pulse-family scripts
 
-The original pulse generators are available in [scripts/pulse_families](scripts/pulse_families/README.md).
-Ten standalone Python scripts cover rectangular, Gaussian, Hann/Hamming/Blackman,
-Slepian/DPSS, Kaiser, flat-top Gaussian, flat-top Hann, Chebyshev I,
-Chebyshev II WCA, and Gaussian DRAG pulses.
+The [pulse-family directory](scripts/pulse_families/README.md) contains ten standalone Python scripts covering rectangular, Gaussian, Hann, Hamming, Blackman, Slepian/DPSS, Kaiser, flat-top Gaussian, flat-top Hann, Chebyshev I, Chebyshev II WCA and Gaussian DRAG envelopes.
 
-Each script generates numerical CSV data and PNG plots for baseband time-domain,
-baseband FFT, IQ time-domain, and IQ FFT analysis. The calculation cells retain
-the saved source notebooks' pulse definitions, sampling, normalization, and plotting.
+Each script generates numerical data and figures for four stages: the baseband pulse, its FFT, the IQ signal and its FFT. Pulse definitions, shape parameters, normalisation conventions and execution instructions are described in the [pulse-family documentation](scripts/pulse_families/README.md).
 
-From the repository root:
+## Running the calculations
+
+Use Python 3.11 or newer. From the repository root:
 
 ```bash
 python -m pip install -r requirements.txt
 python scripts/pulse_families/rectangular.py
 ```
 
-The default settings run the complete parameter sweep. See the
-[script guide](scripts/pulse_families/README.md) for a small first run, output paths,
-shape conventions, and source-notebook links.
-
+The scripts run the configured parameter sweeps and save CSV data and PNG figures in their respective study directories. The pulse-family documentation explains how to select a single parameter combination and identifies the output files.
