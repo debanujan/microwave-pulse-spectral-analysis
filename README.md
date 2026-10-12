@@ -10,6 +10,10 @@ The [pulse-family directory](scripts/pulse_families/README.md) contains ten stan
 
 Each script generates numerical data and figures for four stages: the baseband pulse, its FFT, the IQ signal and its FFT. Pulse definitions, shape parameters, normalisation conventions and execution instructions are described in the [pulse-family documentation](scripts/pulse_families/README.md).
 
+## Numerical data
+
+The [data directory](data/README.md) provides separate folders for baseband pulse data, baseband spectra, IQ time-domain data and IQ spectra. CSV files are organised by analysis stage, with the pulse family and simulation parameters retained in their filenames.
+
 ## Running the calculations
 
 Use Python 3.11 or newer. From the repository root:
